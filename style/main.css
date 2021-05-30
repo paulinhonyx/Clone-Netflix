@@ -1,0 +1,112 @@
+:root{
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+/* base */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+header p{
+    color: var(--vermelho);
+}
+
+/* filme principal */
+
+.filmeprincipal{
+    font-size: 15px;
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/kimetsu.jpg');
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.filmeprincipal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 40%;
+}
+
+.filmeprincipal .titulo{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10%;
+}
+
+.botao{
+    background-color: var(--vermelho);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    padding: 15px 30px;
+    font-size: 12px;
+    transition: 0.3s ease all;
+    cursor: pointer;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.botao:hover{
+    background-color: white;
+    color: var(--preto);
+}
+
+.container {
+    margin-left: 15px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 50px;
+}
+
